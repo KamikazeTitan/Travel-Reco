@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelReco - Contact Us</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; }
+    nav { padding:14px 18px; background:#111; color:#fff; display:flex; gap:14px; align-items:center; }
+    nav a { color:#fff; text-decoration:none; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 18px; max-width: 820px; }
+    form { display:grid; gap: 10px; max-width: 520px; }
+    input, textarea { padding: 10px; border-radius: 10px; border:1px solid #ccc; }
+    button { padding: 10px; border-radius: 10px; border:0; background:#111; color:#fff; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <nav>
+    <b>TravelReco</b>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>Have a question or suggestion? Send us a message.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Thanks! Your message was sent (demo).');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+</body>
+</html>
